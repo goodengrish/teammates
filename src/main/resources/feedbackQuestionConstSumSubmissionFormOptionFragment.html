@@ -1,7 +1,7 @@
 <div class="margin-bottom-15px flex">
   <label class="constSumOptionsLabel" ${constSumOptionVisibility}>${constSumOptionValue}</label>
   <div class="${marginLeft}">
-    <input type="number" class="form-control pointsBox" ${disabled}
+    <input type="number" class="form-control" ${disabled}
         id="${Const.ParamsNames.FEEDBACK_RESPONSE_TEXT}-${questionIndex}-${responseIndex}-${optionIdx}"
         name="${Const.ParamsNames.FEEDBACK_RESPONSE_TEXT}-${questionIndex}-${responseIndex}"
         value="${constSumOptionPoint}" onChange="updateConstSumMessageQn('${questionIndex}')"

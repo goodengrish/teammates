@@ -4,7 +4,7 @@
     ${constSumEditFormOptionFragments}
     <div id="constSumAddOptionRow-${questionNumber}">
       <div colspan="2">
-        <a class="btn btn-primary btn-xs addOptionLink" id="constSumAddOptionLink-${questionNumber}"
+        <a class="btn btn-primary btn-xs" id="constSumAddOptionLink-${questionNumber}"
             onclick="addConstSumOption(${questionNumber})" style="display:none">
           <span class="glyphicon glyphicon-plus">
           </span> add more options
@@ -37,7 +37,7 @@
           <div data-toggle="tooltip" data-placement="top"
               title="${Const.Tooltips.FEEDBACK_QUESTION_CONSTSUMPOINTS}">
             <div class="col-xs-4 padding-0 col-sm-4">
-              <input type="number" disabled class="form-control width-100-pc pointsBox"
+              <input type="number" disabled class="form-control width-100-pc"
                   name="${Const.ParamsNames.FEEDBACK_QUESTION_CONSTSUMPOINTS}"
                   id="constSumPoints-${questionNumber}" value="${constSumPoints}" min="1"
                   step="1" onChange="updateConstSumPointsValue(${questionNumber})">
@@ -81,7 +81,7 @@
               title="${Const.Tooltips.FEEDBACK_QUESTION_CONSTSUMPOINTSFOREACHRECIPIENT}">
             <div class="col-xs-4 padding-0">
               <input type="number" disabled
-                  class="form-control width-100-pc pointsBox"
+                  class="form-control width-100-pc"
                   name="${Const.ParamsNames.FEEDBACK_QUESTION_CONSTSUMPOINTSFOREACHRECIPIENT}"
                   id="constSumPointsForEachRecipient-${questionNumber}" value="${constSumPoints}" min="1"
                   step="1" onChange="updateConstSumPointsValue(${questionNumber})">
